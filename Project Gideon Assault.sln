@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project Gideon Assault.Plugins", "Project Gideon Assault.Plugins.csproj", "{C9582D7F-EB66-1CED-2A55-1BDB948B872B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project Gideon Assault", "Project Gideon Assault.csproj", "{E0FB3931-7395-EFFC-3528-67995ED92240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project Gideon Assault.Editor.Plugins", "Project Gideon Assault.Editor.Plugins.csproj", "{FBF4EAD8-5AFE-9837-7AA0-20D9255F45ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9582D7F-EB66-1CED-2A55-1BDB948B872B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9582D7F-EB66-1CED-2A55-1BDB948B872B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9582D7F-EB66-1CED-2A55-1BDB948B872B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9582D7F-EB66-1CED-2A55-1BDB948B872B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0FB3931-7395-EFFC-3528-67995ED92240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0FB3931-7395-EFFC-3528-67995ED92240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0FB3931-7395-EFFC-3528-67995ED92240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0FB3931-7395-EFFC-3528-67995ED92240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBF4EAD8-5AFE-9837-7AA0-20D9255F45ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF4EAD8-5AFE-9837-7AA0-20D9255F45ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF4EAD8-5AFE-9837-7AA0-20D9255F45ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF4EAD8-5AFE-9837-7AA0-20D9255F45ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
