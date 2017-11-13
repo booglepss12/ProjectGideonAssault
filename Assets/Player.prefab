@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4432018845572792}
   - component: {fileID: 33337808927406988}
   - component: {fileID: 23418148071006816}
+  - component: {fileID: 114564606549019826}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1848633397954036}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 451.5362, y: 7.39, z: -17.08367}
+  m_LocalPosition: {x: -0.13320923, y: -0.4, z: 5.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,3 +83,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1848633397954036}
   m_Mesh: {fileID: 4300002, guid: 6c11e79470dad4b4bb66b279d2660007, type: 3}
+--- !u!114 &114564606549019826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1848633397954036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95f278b75d8ac0949b38b49c79b73443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpeed: 5
+  xRange: 6
+  ySpeed: 6
+  yRange: 4.5
+  positionPitchFactor: -5
+  positionYawFactor: 5
+  controlPitchFactor: -30
+  controlRollFactor: -20
