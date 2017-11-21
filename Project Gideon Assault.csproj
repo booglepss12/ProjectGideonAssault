@@ -231,6 +231,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\Scripts\BulletSystem.cs" />
     <Compile Include="Assets\Scripts\CollisionHandler.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
