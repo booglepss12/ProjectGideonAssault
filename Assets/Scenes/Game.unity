@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.1978409, g: 0.08147039, b: 0.036872283, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -620,8 +620,7 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 14.723001
       objectReference: {fileID: 0}
-    - target: {fileID: 65907957370734106, guid: bf374732b0ea2c34daa340dc2de7f746,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -649,6 +648,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d7c9c2bcfb81a4a90fc3c2ecb38969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDeathFx: {fileID: 1378061462973834, guid: fa29b863388213a49b05980f97df3b8b,
+    type: 2}
+  parent: {fileID: 1017318055}
 --- !u!1001 &1014217407
 Prefab:
   m_ObjectHideFlags: 0
@@ -693,9 +695,45 @@ Prefab:
       propertyPath: randomSeed
       value: 1846203174
       objectReference: {fileID: 0}
+    - target: {fileID: 1632310068111648, guid: 5a1eca91459c5e5419dc51dacf59b969, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632310068111648, guid: 5a1eca91459c5e5419dc51dacf59b969, type: 2}
+      propertyPath: m_Name
+      value: Player Death FX
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a1eca91459c5e5419dc51dacf59b969, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1017318054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1017318055}
+  m_Layer: 0
+  m_Name: Spawned At Runtime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1017318055
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1017318054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1068272277 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4432018845572792, guid: 5a1eca91459c5e5419dc51dacf59b969,
@@ -970,8 +1008,7 @@ Prefab:
       propertyPath: m_Name
       value: Ship_02 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 65907957370734106, guid: bf374732b0ea2c34daa340dc2de7f746,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -999,6 +1036,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d7c9c2bcfb81a4a90fc3c2ecb38969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDeathFx: {fileID: 1378061462973834, guid: fa29b863388213a49b05980f97df3b8b,
+    type: 2}
+  parent: {fileID: 1017318055}
 --- !u!1 &2071208275
 GameObject:
   m_ObjectHideFlags: 0
