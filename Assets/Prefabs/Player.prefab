@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 199256708994680650}
   - component: {fileID: 82173233831316424}
   m_Layer: 0
-  m_Name: Explosion
+  m_Name: Player Death FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f278b75d8ac0949b38b49c79b73443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 20
+  Speed: 10
   xRange: 6
   yRange: 4.5
   positionPitchFactor: -5
@@ -564,7 +564,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1019794003
+  randomSeed: 1846203174
   InitialModule:
     serializedVersion: 3
     enabled: 1

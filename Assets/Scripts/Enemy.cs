@@ -1,23 +1,52 @@
 ﻿using System;
+
 using System.Collections;
+
 using System.Collections.Generic;
+
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
-    [SerializeField] GameObject enemyDeathFx;
-    [SerializeField] Transform parent;
 
-	// Use this for initialization
-	void Start ()
+
+public class Enemy : MonoBehaviour
+{
+
+
+
+    [SerializeField] GameObject deathFX;
+
+    [SerializeField] Transform parent;
+    [SerializeField] int scorePerHit = 10;
+
+    ScoreBoard scoreBoard;
+
+    // Use this for initialization
+
+    void Start()
     {
-        Collider enemyBoxCollider = gameObject.AddComponent<BoxCollider>();
-        enemyBoxCollider.isTrigger = false;
+        AddBoxCollider();
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+
+    }
+
+    private void AddBoxCollider()
+    {
+        Collider boxCollider = gameObject.AddComponent<BoxCollider>();
+
+        boxCollider.isTrigger = false;
     }
 
     void OnParticleCollision(GameObject other)
+
     {
-        GameObject fx = Instantiate(enemyDeathFx, transform.position, Quaternion.identity);
+        scoreBoard.ScoreHit(scorePerHit);
+
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+
         fx.transform.parent = parent;
+
         Destroy(gameObject);
+
     }
+
 }
