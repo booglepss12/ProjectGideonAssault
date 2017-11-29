@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
     [Tooltip("In metres per second")][SerializeField] float Speed = 4f;
     [Tooltip("in metres")] [SerializeField] float xRange = 5f;
     [Tooltip("in metres")] [SerializeField] float yRange = 3f;
+    [SerializeField] GameObject[] guns;
     [Header("Screen Position")]
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float positionYawFactor = 5f;
@@ -25,8 +26,38 @@ public class PlayerController : MonoBehaviour {
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
+
+    void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            ActivateGuns();
+        }
+        else
+        {
+            DeActivateGuns();
+        }
+    }
+
+    void DeActivateGuns()
+    {
+        foreach(GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
+    }
+
+    void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+
     void OnPlayerDeath() //called by string reference in CollisionHandler
     {
         isControlsEnabled = false;
